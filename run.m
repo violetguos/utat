@@ -1,4 +1,6 @@
 %input measured H->hmeas, f(x)->fstate, x,p,q,r accordingly.
+
+%h= an augmented form of the magnetometer and solar cell measurements
 %q= transpose([q1 q2 q3 q4]) is a quaternion
 %b=magnet sensor data
 %sun angle alpha = I_alpha/I_alpha=0
