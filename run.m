@@ -1,11 +1,13 @@
 %input measured H->hmeas, f(x)->fstate, x,p,q,r accordingly.
 
+%f(x(t))=x_dot(t)-w(t), F=state transition matrix
 %h= an augmented form of the magnetometer and solar cell measurements
 %q= transpose([q1 q2 q3 q4]) is a quaternion
 %b=magnet sensor data
 %sun angle alpha = I_alpha/I_alpha=0
 %s^BODY= ni * cos(alpha_i)
 %r^ECI=A*r^BODY
+%x is calculated below, no inital measurement taken
 
 
 n=3;      %number of state
