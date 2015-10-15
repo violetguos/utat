@@ -45,13 +45,34 @@ void loop(){
   
 
   //Print out values of each axis
-  Serial.print("x: ");
+ /* Serial.print("x: ");
   Serial.print(x);
   Serial.print("  y: ");
   Serial.print(y);
   Serial.print("  z: ");
   Serial.println(z);
   
-  delay(250);
-}
+  delay(250);*/
 
+ Serial.begin(9600);
+
+ Serial.print(millis()); // print the time in milliseconds since the program started
+  
+  
+  Serial.print(',');
+Serial.print(" x: ");
+  Serial.print(x);
+
+  Serial.print(',');
+  Serial.print("  y: ");
+    Serial.print(y);
+
+  Serial.print(',');
+ Serial.print("  z: ");
+   Serial.println(z);
+
+ 
+    delay(250);
+
+  
+}
